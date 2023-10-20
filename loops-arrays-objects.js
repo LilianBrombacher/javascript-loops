@@ -7,13 +7,19 @@ const scores = [
     {name: 'David', score: 77, grade: null},
     {name: 'Khalid', score: 92, grade: null},
     {name: 'Rianne', score: 66, grade: null}
+
 ];
+for (let i = 0; i < scores.length; i++) {
+    console.log(scores[i].score)
+
+}
+
 
 // Verwachtte uitkomsten:
 // 83
 // 77
 // 92
-// 66ç
+// 66
 // ==========================================
 
 
@@ -31,7 +37,21 @@ const scores = [
 // A
 // D
 // ==========================================
+for (let i = 0; i < scores.length; i++) {
+    if (scores[i].score < 60) {
+        console.log('F');
+    } else if (scores[i].score < 70) {
+        console.log('D');
+    } else if (scores[i].score < 80) {
+        console.log('C');
+    } else if (scores[i].score < 90) {
+        console.log('B');
+    } else {
+        console.log('A');
+    }
+}
 
+console.log(scores);
 
 
 
@@ -49,6 +69,21 @@ const scores = [
 //  ];
 // ==========================================
 
+for (let i = 0; i < scores.length; i++) {
+    if (scores[i].score < 60) {
+        scores[i].grade = 'F';
+    } else if (scores[i].score < 70) {
+        scores[i].grade = 'D';
+    } else if (scores[i].score < 80) {
+        scores[i].grade = 'C';
+    } else if (scores[i].score < 90) {
+        scores[i].grade = 'B';
+    } else {
+        scores[i].grade = 'A';
+    }
+}
+
+console.log(scores);
 
 
 
@@ -75,7 +110,12 @@ const NOVIEmployees = [
 //  ];
 // ==========================================
 
+for (let i = 0; i < NOVIEmployees.length; i++) {
+    const emailAdress = NOVIEmployees[i].firstName + "." + NOVIEmployees[i].lastName + "@novi.nl"
 
+    NOVIEmployees[i] .email =emailAdress
+}
+console.log(NOVIEmployees)
 
 
 
@@ -131,5 +171,41 @@ const students = [
 // ]
 // ==========================================
 
-
-
+for (let i = 0; i <students.length; i++) {
+    switch (students[i].zipCode){
+        case '3513':
+            students[i].neighborhood ='Pijlsweerd'
+            break;
+    }
+    switch (students[i].zipCode){
+        case '3514':
+            students[i].neighborhood ='Vogelenbuurt'
+            break;
+    }
+    switch (students[i].zipCode){
+        case '3512':
+            students[i].neighborhood ='Binnenstad'
+            break;
+    }
+    switch (students[i].zipCode){
+        case '3531':
+            students[i].neighborhood ='Lombok'
+            break;
+    }
+    switch (students[i].zipCode){
+        case '3572':
+            students[i].neighborhood ='Wittevrouwen'
+            break;
+    }
+    switch (students[i].zipCode){
+        case '3581':
+            students[i].neighborhood ='Oudwijk'
+            break;
+    }
+    switch (students[i].zipCode){
+        case '3583':
+            students[i].neighborhood ='Schildersbuurt'
+            break;
+    }
+}
+// console.log(students)

@@ -1,5 +1,11 @@
 // ==========================================
 // Opdracht 1. Maak een for loop die het volgende patroon in de terminal print:
+const icon= "*"
+for (let i = 1; i < 6; i++) {
+    console.log(icon.repeat(i));
+}
+
+
 // Verwachte uitkomsten:
 // *
 // **
@@ -17,6 +23,19 @@
 
 // ==========================================
 // Opdracht 2. Maak een for-loop die 4 keer het woord "loop..." logt, en bij de laatste (vijfde) loop het woord "klaar!"
+const move= "loop..."
+for (let i = 1; i < 5; i++) {
+    console.log(move.repeat(1));
+}
+console.log("klaar!")
+
+for (let i = 0; i < 5; i++) {
+    if ([i] < 4) {
+        console.log("loop...");
+    } else {
+        console.log("klaar!");
+    }
+}
 // Verwachte uitkomsten:
 // loop...
 // loop...
@@ -27,11 +46,46 @@
 
 
 
-
-
 // ==========================================
 // Opdracht 3: maak een for-loop die van 0 tot 9 loopt en de getallen 0 tot 9 logt.
 // Echter, vanaf het getal 3 komt er een > voor ieder getal te staan, en vanaf het getal 6 komt er >> voor ieder getal te staan.
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+    if ([i] > 2) {
+        console.log(">" + (i))
+    }
+    if ([i] > 5) {
+        console.log(">>" + (i))
+    }
+}
+
+for (let i = 0; i < 10; i++) {
+
+    if (i > 2 && i < 6) {
+
+        console.log("> " + i);
+
+    } else if (i > 5) {
+
+        console.log(">> " + i);
+
+    } else {
+
+        console.log(i);
+
+    }
+
+}
+for (let i = 0; i < 10; i++) {
+    if ([i] < 3) {
+        console.log(i);
+    } else if (i >= 3 && i < 6) {
+        console.log("> " + i);
+    } else {
+        console.log(">> " + i);
+    }
+}
+
 // Verwachte uitkomsten:
 // 0
 // 1
