@@ -1,6 +1,6 @@
 // ==========================================
 // Opdracht 1a
-// Schrijf een script dat voor iedere student in de array de score (het getal uit de property "score") in de terminal print
+// Schrijf een script dat voor iedere student in de array de score (het getal uit de property "score") in de terminal print.
 
 const scores = [
     {name: 'Max', score: 83, grade: null},
